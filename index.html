@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final struggle</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+     <link rel="icon" href="favicon.ico"/>
+     <link rel="stylesheet" href="css/ionicons.min.css">
+     <link rel="stylesheet" href="css/ionicons.css">
+
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="grid-container">
+<div class="grid-x">
+        <div class="cell medium-6">
+            <a href=""><img src="img/logo.svg" alt="logo"></a>
+        </div>
+    <div class="cell medium-6">
+        <ul class="menu">
+            <li><a href="#1" >Home</a></li>
+            <li><a href="#2">About</a></li>
+            <li><a href="#3">Services</a></li>
+            <li><a href="#4">Works</a></li>
+            <li><a href="#5">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+    <div class="page">
+        <div class="page-title text-center">
+            <h1>Creative Digital Project</h1>
+        </div>
+        <div class="page-description text-center">
+            <p>Duis mollis, est non commodo luctus,
+ nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+    </div>
+
+    </header>
+<section class="wrap" id="2">
+<div class="grid-container">
+    <div class="grid-x slide_2">
+        <div class="cell medium-5">
+            <img src="img/about_us.jpg" alt="about_us">
+        </div>
+        <div class="cell medium-7">
+            <p>Nullam quis risus eget urna<b> mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+            <p><b>Morbi leo risus</b>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet <i>fermentum</i>. Sed posuere consectetur est at lobortis.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+   
+        <div class="grid-x grid-margin-x medium-margin-collapse">
+        <div class="cell medium-4 ">
+            <a href="#"><img class="column1" src="img/Columngraphic.jpg" alt="column1"></a>
+            <a href="#"><img class="seo" src="img/seo1.jpg" alt="seo"></a>
+        </div>
+         <div class="cell medium-4 ">
+         <a href="#"><img class="column2" src="img/column1.jpg" alt="column1"></a>
+         <a href="#"><img class="mobile" src="img/Mobile.jpg" alt="mobile"></a>
+            
+        </div>
+         <div class="auto cell">
+            <a href="#"><img class="web" src="img/web1.jpg" alt="title"></a>
+        </div>
+            
+        </div>
+        </div>
+        </section>
+
+<section class="slide_me" id="4">
+<div class="topping">
+    <div class="text-center">
+        <img class='pen' src="img/pen.png" alt="pen">
+    </div>
+    <div class="text-center">
+        <h3>Recent Works</h3>
+    </div>
+    </div>
+
+                
+            <div class="slide"> 
+  
+                    <div class="insert"> 
+                        <img src="img/food.jpg" alt="smile">
+    
+                    </div>
+  
+                <div class="insert"> 
+                    <img src="img/food2.jpeg" alt="smile">
+    
+                </div>
+  
+                <div class="insert"> 
+                    <img src="img/food3.jpeg" alt="smile">
+    
+                </div>
+  
+                <div class="insert"> 
+                    <img src="img/food1.jpeg" alt="smile">
+    
+                </div>
+  
+        </div>
+        <a href="#" class="button">View Gallery</a>
+ </section> 
+     
+
+<div id="map"></div>
+
+<footer>
+    <div class="grid-container socials">
+                <div class="grid-x">
+                    <div class="cell medium-6 text-center">
+                    <p>©2014 tulusdriyo. All Rights Reserved.</p>
+                    </div>
+                    <div class="cell medium-6">
+                        <span><i class="icon ion-social-twitterion-social-twitter"></i></span>
+                        <span><i class="icon ion-social-facebook"></i></span>
+                        <span><i class="icon ion-social-googleplus"></i></span>
+                        <span><i class="icon ion-social-github"></i></span>
+                        <span><i class="icon ion-social-instagram"></i></span>
+
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<style>
+  #map {
+    height: 100%;
+
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+</style>
+
+
+
+   <script>
+      var map;
+      var place = {lat:48.923270, lng:24.710342};
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 48.92303, lng: 24.714333},
+          zoom: 14
+        });
+        var marker = new google.maps.Marker({
+          position: place,
+          map: map,
+          title: 'Finally!'
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBppW53gzDXg_0VNaD_pzlZ1B8ZcM8WRN8&callback=initMap"
+    async defer></script>
+
+
+
+
+
+<script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<!-- <script
+  src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"
+  integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+  crossorigin="anonymous"></script -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+     $(".slide").slick({
+        dots: true,
+        infinite: true,
+       
+      });
+    });
+  </script>
+
+
+
+
+</body>
+</html>
